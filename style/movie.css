@@ -1,0 +1,105 @@
+:root{
+    --colorA: #1db951;
+    --colorB: #ffffff;
+    --colorC: #888;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Base elements*/
+
+body{
+    background:var(--colorB);
+    font-family: 'Times New Roman', Times, serif;
+    color:whitesmoke;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:10px
+}
+
+header .logo{
+    color:var(--colorA);
+    font-family: 'Arial Black';
+    font-size:40px;
+    margin-left:5px;  
+}
+
+header nav a{
+    color:var(--colorC);
+    text-decoration: none;
+    margin:10px;
+}
+
+header nav a:hover{
+    color:#555;
+    transition: color .5s;
+}
+
+main{
+    margin:15px;
+}
+
+.movie-player{
+    background: linear-gradient(rgba(1,1,1,.5),rgba(1,1,1,.5)), url("../img/Mafia.jpg");
+    height:400px;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:whitesmoke
+}
+
+.movie-player i{
+    font-size:100px
+}
+
+.movie-player i:hover{
+    color:grey;
+    transition: color .5s;
+}
+
+
+.Title{
+    font-size:22px;
+    margin-bottom:15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.movie-options{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    height:100px;
+    background:#111;
+    display:flex;
+    justify-content: space-between;
+}
+
+.movie-options .container{
+    width:500px;
+}
+
+.movie-options .button{
+    color:#DDD;
+    border:none;
+    background:none;
+    font-size: 22px;
+    margin-left:2px;
+    margin-right:5px;
+}
+
+.movie-options .button:hover{
+    color:var(--colorA);
+    transition: color .5s;
+}
+
+
